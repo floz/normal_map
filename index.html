@@ -13,13 +13,24 @@
         <div class="images_experience">
             <img id="texture" src="img/texture.png" width="131" height="161" />
             <img id="normal_map" src="img/normal_map.png" width="131" height="161" />
+            <img id="displacement_map" src="img/displacement_map.png" width="131" height="161" />
         </div>
 
         <div class="main">
-            <canvas id="canvas_normal_map" width="131" height="161"></canvas>
+            <div class="main__normal_map">
+                <img src="img/texture.png" width="131" height="161" />
+                <canvas id="canvas_normal_map" width="131" height="161"></canvas>
+            </div>
+            <div class="main__displacement_map">
+                <img src="img/texture.png" width="131" height="161" />
+                <canvas id="canvas_displacement_source" width="131" height="161"></canvas>
+                <canvas id="canvas_displacement_map" width="131" height="161"></canvas>
+                <canvas id="canvas_displacement_target" width="131" height="161"></canvas>
+            </div>
         </div>
 
         <script type="text/javascript" src="js/vendors/dat.gui.min.js"></script>
+        <script type="text/javascript" src="js/vendors/displacement.js"></script>
         <script src="js/main.js"></script>
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </body>
