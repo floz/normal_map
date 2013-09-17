@@ -12,3 +12,7 @@ html, body {
 .main__normal_map img {
 	position: absolute;
 }
+
+#img_drop_layer {
+	position: absolute;
+}
